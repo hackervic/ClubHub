@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateClub">
+
+    <include
+        android:id="@+id/creat_club_layout"
+        layout="@layout/app_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creat_club_layout"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/student_c_profile_bar_layout"
+            android:layout_marginBottom="20dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/club_logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/use" />
+
+            <TextView
+                android:id="@+id/tv_change_club_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="2dp"
+                android:text="Change club logo"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Welcome "
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" Leader"
+                    android:id="@+id/tv_leader_name"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Club Name"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/club_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="none"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Club Coordinator"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/club_coordinator_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="none"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Club Leader"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/Leader_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="none"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Club Catagory"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/club_catagory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="e.g.:- technical , welfare , literature etc."
+                android:inputType="none"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Club Contact"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/club_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="E.g. :- email or mobile no"
+                android:inputType="none"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Benifit of Joining Cub"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/benifit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="none"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Vision"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="none"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Club description"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/club_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="none"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#A3000000"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Register my club"
+                android:textAllCaps="false"
+                android:id="@+id/club_register_btn"
+                android:textColor="#fff"
+                android:textSize="19sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

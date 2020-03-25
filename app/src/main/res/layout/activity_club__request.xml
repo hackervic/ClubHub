@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Club_Request">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:text="Clubs Request ):"
+        android:textSize="30sp"
+        android:id="@+id/tv1"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv1"
+        android:layout_margin="10dp"
+        android:id="@+id/club_request_recycler_view"
+        >
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

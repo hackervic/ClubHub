@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Clubs_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Club ):"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:id="@+id/tv"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv"
+android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/club_recycler_view"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>

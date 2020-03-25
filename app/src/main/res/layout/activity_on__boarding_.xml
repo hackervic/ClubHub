@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".On_Boarding_Activity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="12dp"
+        android:background="#ffffff"
+        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+        android:elevation="5dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/gradient_start_color" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        app:tabBackground="@drawable/indicator_selector">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:id="@+id/btn_getstarted"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewpager1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/btn_gradient"
+        android:elevation="5dp"
+        android:padding="2dp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/nextbutton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/round_corne"
+        android:elevation="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="#fff"
+        android:textAllCaps="false"
+        android:text="Skip"
+        android:id="@+id/skipbtn"
+        android:textColor="@color/gradient_start_color" />
+
+</RelativeLayout>

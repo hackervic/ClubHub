@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e9ec"
+    android:orientation="vertical"
+    tools:context=".ClubProfile">
+
+
+    <include
+        android:id="@+id/club_profile_layout"
+        layout="@layout/app_bar_layout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@color/greyPrimary"
+                tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="55dp"
+                app:cardCornerRadius="70dp"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_gravity="center"
+                    android:padding="1dp"
+                    android:src="@drawable/use" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <ImageButton
+                android:id="@+id/profile_pencil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="125dp"
+                android:layout_marginRight="20dp"
+                android:background="#fff"
+                android:src="@drawable/pencil"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/c_rating"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="125dp"
+                android:background="@drawable/round_corne"
+                android:drawableRight="@drawable/black_star_dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="4.5"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="220dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Connecting - 4"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/club_profile_c_catagory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/roboto"
+                android:text="Literature"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/club_profile_c_collage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="280dp"
+                android:fontFamily="@font/roboto"
+                android:text="GGITS"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/club_profile_c_bio"
+                android:layout_width="335dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="310dp"
+                android:text="When you want to make your life feel better and your thoughts more positive…"
+                android:textAlignment="viewStart"
+                android:textColor="@color/back" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/club_profile_c_catagory"
+                android:layout_marginTop="70dp"
+                android:background="#f2f6f9"
+
+                >
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#f2f6f9">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Your Dashboard"
+                        android:textColor="#000"
+                        android:textSize="19sp" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="30dp"
+                        android:padding="5dp"
+                        app:cardElevation="5dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_dashboard"
+                            android:background="#f2f6f9"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="3">
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="12"
+                                    android:fontFamily="@font/comfortaa_bold"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/review"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:text="Reviews"
+                                    android:fontFamily="@font/comfortaa_bold"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="17sp"
+
+                                    />
+
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="8dp">
+
+                                <TextView
+                                    android:id="@+id/total_members"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="25"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/comfortaa_bold"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:text="Members"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="17sp"
+
+                                    />
+
+                            </com.google.android.material.card.MaterialCardView>
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp" />
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                app:cardCornerRadius="5dp"
+                                android:id="@+id/btn_join_club"
+                                app:cardElevation="5dp">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="10dp"
+                                    android:id="@+id/join_club_image"
+                                    android:src="@drawable/joinclub" />
+
+
+                                <TextView
+                                    android:id="@+id/join_club_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:text="Join Club"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="17sp"
+
+                                    />
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="120dp"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1"
+                                    app:cardCornerRadius="5dp"
+                                    android:visibility="invisible"
+                                    android:saveEnabled="false"
+                                    android:id="@+id/btn_leave_club"
+                                    app:cardElevation="5dp">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:src="@drawable/logout" />
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="10dp"
+                                        android:visibility="visible"
+                                        android:src="@drawable/logout" />
+
+                                    <TextView
+                                        android:id="@+id/leave_club_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="25dp"
+                                        android:text="Leave Club"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="17sp"
+
+                                        />
+                                </com.google.android.material.card.MaterialCardView>
+                            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="135dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:src="@mipmap/ch" />
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="Club Leader"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/leader_name"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="35dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Soumya Dubey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/leader_contact"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="soumyaduber12@gmail.com"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="85dp"
+                            android:src="@mipmap/ch" />
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="85dp"
+                            android:text="Club Faculty Coordinator"
+                            android:textColor="#000"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/coordinator_name"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="112dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Coordinatoe name"
+                            android:textSize="14sp" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardview_members"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="275dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:src="@mipmap/ch" />
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="Club Members"
+                            android:textColor="#000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/club_member_one"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="35dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Club Member One"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/club_member_two"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Club Member Two"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/club_memeber_three"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="85dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Club Member Three"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="250dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="115dp"
+                            android:background="#000" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="125dp"
+                            android:src="@mipmap/ch" />
+
+                        <TextView
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="125dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="Club Contact"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/club_contact"
+                            android:layout_width="280dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="145dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Enter two contact no in single line"
+                            android:textSize="12sp" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/c_p_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="455dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/r2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@mipmap/ch" />
+
+                                <TextView
+                                    android:layout_width="230dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="65dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/comfortaa_bold"
+                                    android:text="Club Description"
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/club_profile_c_description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="65dp"
+                                    android:layout_marginTop="30dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="5dp"
+                                    android:text="An an valley indeed so no .provided declared. He many kept on draw lain song as same. Whether at dearest certain spirits is entered in to."
+                                    android:textSize="13sp" />
+
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:src="@mipmap/ch" />
+
+                                <TextView
+                                    android:layout_width="230dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="65dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/comfortaa_bold"
+                                    android:text="Club Advantages"
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/club_profile_c_benifit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="65dp"
+                                    android:layout_marginTop="30dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:padding="5dp"
+                                    android:text="An an valley indeed so no .provided declared. He many kept on draw lain song as same. Whether at dearest certain spirits is entered in to."
+                                    android:textSize="13sp" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

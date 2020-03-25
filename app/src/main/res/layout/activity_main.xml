@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/dotbg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="350dp"
+        android:text="People"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_easy"
+        android:layout_width="208dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tv_people"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:text="Easiest way to be linked"
+        android:textColor="#696969"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Login"
+            android:id="@+id/btn_student"
+            android:layout_margin="8dp"
+            android:background="@drawable/transparent_bd_bordered"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:id="@+id/btn_club_society"
+            android:layout_margin="8dp"
+            android:background="@drawable/transparent_bd_bordered"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

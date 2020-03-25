@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/gridviewdata"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/grid_club_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginHorizontal="5dp"
+            android:textColor="#000"
+            android:text="Connecting-4"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/grid_club_catagory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:fontFamily="@font/roboto"
+            android:text="Literature"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginHorizontal="6dp"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/grid_club_collage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/roboto"
+            android:text="GGits"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/grid_club_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/ch" />
+
+
+        <TextView
+            android:id="@+id/grid_ratingview"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbackground"
+            android:text="4.5"
+            android:padding="8dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_favorites"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="118dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/tag"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/club_bookmark_btn"
+            />
+
+
+
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

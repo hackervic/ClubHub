@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nucleus.events.clubhub">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+        <activity android:name=".ForgetPassword"></activity>
+        <activity android:name=".Request_club_profile" />
+        <activity android:name=".ClubProfile" />
+        <activity android:name=".Club_Request" />
+        <activity android:name=".MyClub" />
+        <activity android:name=".FAQ" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".Notification_Activity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".CreateClub" />
+        <activity android:name=".Society_complete_profile" />
+        <activity android:name=".Student_complete_profile" />
+        <activity android:name=".Student_register" />
+        <activity android:name=".Club_register" />
+        <activity android:name=".Admin_Dashboard" />
+        <activity android:name=".Student_login" />
+        <activity android:name=".Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".On_Boarding_Activity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

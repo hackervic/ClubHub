@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    tools:context=".Student_register">
+
+    <include
+        android:id="@+id/student_register_layout"
+        layout="@layout/app_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student_register_layout"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:padding="5dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_ggits" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="@color/tab_indicator_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:fontFamily="@font/roboto_black"
+            android:paddingVertical="5dp"
+            android:text="Register ):"
+
+            android:textAlignment="textStart"
+
+            android:textColor="@color/tab_indicator_color"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/colorPrimary"
+            android:layout_gravity="center"
+
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/student"
+
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:hint="  Name"
+
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:id="@+id/email"
+                android:drawableLeft="@drawable/password"
+                android:hint="  E-mail" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:id="@+id/password"
+                android:drawableLeft="@drawable/password"
+                android:hint="  Password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/catagory_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/transparent_bd_bordered"
+            android:layout_marginEnd="25dp"
+            />
+        <com.steelkiwi.library.SlidingSquareLoaderView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:sslv_corner_radius="10dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            app:sslv_end_gradient_color="@color/end_gradient_color"
+            app:sslv_start_gradient_color="@color/start_gradient_color"
+            app:sslv_background_color="#fff"
+            app:sslv_square_size="20dp"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_gradient"
+            android:elevation="5dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="SignUp"
+            android:textAllCaps="false"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserrat"
+                android:text="Already have an account ?"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text=" SignIn"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

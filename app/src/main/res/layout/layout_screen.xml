@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="550dp"
+
+    >
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/img1"
+        tools:srcCompat="@tools:sample/avatars[11]"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27dp"
+        android:id="@+id/title_ob"
+        android:layout_below="@+id/img1"
+        android:layout_marginTop="10dp"
+        android:text="Title of image"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@+id/title_ob"
+        android:id="@+id/desc_ob"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="1dp"
+        android:text="Far curiosity incommode now led smallness allowance. Favour bed assure son things yet. She consisted consulted elsewhere happiness disposing household any old the. Widow downs you new shade drift hopes small. So otherwise commanded sweetness we improving. Instantly by daughters resembled unwilling principle so middleton. "
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

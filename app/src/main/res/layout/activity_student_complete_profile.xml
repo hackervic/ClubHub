@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student_complete_profile">
+
+    <include
+        android:id="@+id/student_c_profile_bar_layout"
+        layout="@layout/app_bar_layout_update_profile" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/student_c_profile_bar_layout">
+
+        <LinearLayout
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/student_c_profile_bar_layout"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_don"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="120dp"
+                android:padding="5dp"
+                android:text="Done"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:background="@drawable/blue_button_background"
+                android:textColor="#000"
+                android:textSize="20sp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_pic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/use" />
+
+            <TextView
+                android:id="@+id/tv_change_user_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="2dp"
+                android:text="Change Profile Pic"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Name"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="none"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Collage"
+                android:textSize="18sp"
+
+                />
+
+            <Spinner
+                android:id="@+id/collage_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:focusable="true"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/transparent_bd_bordered" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Branch"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/branch_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/transparent_bd_bordered" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Semester"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/semester_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/transparent_bd_bordered" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Course"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/course_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/transparent_bd_bordered" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Year"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/year_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/transparent_bd_bordered" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#A3000000"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="Private Information"
+                android:textColor="#E8000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Email"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/student_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Your Email"
+                android:enabled="false"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Enrollment No"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/enrollment_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Your Enorollment no"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Contact"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/student_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter Your Mobile no"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
