@@ -13,7 +13,7 @@
         android:layout_height="130dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="180dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:src="@mipmap/ch" />
 
     <ImageView
